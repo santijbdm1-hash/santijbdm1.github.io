@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santi | Student, developer, athlete from Chía, Colombia</title>
+<meta name="description" content="Personal portfolio of Santi: a student, independent developer and competitive badminton player from Chía, Cundinamarca, Colombia.">
+<meta name="theme-color" content="#16251f">
+<meta property="og:title" content="Santi | Student, developer, athlete">
+<meta property="og:description" content="Projects, badminton and contact details.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Santi, back to top">Santi</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu" aria-label="Main">
+    <a href="#about">About</a><a href="#badminton">Badminton</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <svg class="court" viewBox="0 0 600 400" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <g pathLength="1">
+      <rect x="40" y="40" width="520" height="320"/><rect x="40" y="75" width="520" height="250"/>
+      <path d="M300 40v320M40 200h520M170 40v320M430 40v320"/>
+    </g>
+  </svg>
+  <!-- Floating shuttlecock decoration -->
+  <svg class="shuttle" width="160" height="200" viewBox="0 0 160 200" aria-hidden="true" fill="none">
+    <ellipse cx="80" cy="170" rx="28" ry="10" stroke="#e9ece4" stroke-width="2"/>
+    <line x1="80" y1="160" x2="80" y2="80" stroke="#e9ece4" stroke-width="2.5"/>
+    <ellipse cx="80" cy="75" rx="46" ry="70" stroke="#e9ece4" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <circle cx="80" cy="162" r="8" fill="#e9ece4" fill-opacity=".4"/>
+  </svg>
+  <div class="wrap hero-in">
+    <p class="small">Chía, Cundinamarca, Colombia</p>
+    <h1>Santi</h1>
+    <p class="lead">Student. Developer. Athlete.</p>
+    <p class="hero-text">I build my own apps and I compete in badminton. Both come down to showing up every day and getting a little better.</p>
+    <div class="actions"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="#badminton">Badminton</a></div>
+  </div>
+</section>
+
+<section id="about" class="wrap sec">
+  <h2 data-reveal>About me</h2>
+  <div class="cols">
+    <p class="big" data-reveal data-delay="1">I'm a student from Chía who likes technology and wants to understand how things get made.</p>
+    <div class="prose" data-reveal data-delay="2">
+      <p>I'm interested in software development, and I learn best by building. I like taking an idea I have for myself and turning it into something that actually runs.</p>
+      <p>My two main projects, My Journal and My Wallet, started as tools I wanted to use in my own life. I'm still learning, and I treat each project as practice for the next one.</p>
+      <p>Outside the screen, I train and compete in badminton, which has shaped how I work more than anything else.</p>
+    </div>
+  </div>
+</section>
+
+<section id="badminton" class="band sec">
+  <div class="wrap">
+    <h2 data-reveal>Badminton</h2>
+    <p class="lead2" data-reveal data-delay="1">I'm a competitive badminton player from Chía. Years of training, travel and tournaments are a big part of who I am.</p>
+    <div class="photos">
+      <div class="ph" data-id="b-action" data-reveal data-delay="1"></div>
+      <div class="ph" data-id="b-tournament" data-reveal data-delay="2"></div>
+      <div class="ph" data-id="b-training" data-reveal data-delay="3"></div>
+      <div class="ph" data-id="b-podium" data-reveal data-delay="4"></div>
+    </div>
+    <!-- EDIT: replace the text below with your real results (levels, tournaments, years). -->
+    <div class="facts">
+      <div data-reveal data-delay="1"><h3>Competition</h3><p>[Add your categories, tournaments and results here.]</p></div>
+      <div data-reveal data-delay="2"><h3>Training</h3><p>[Add how often you train and where.]</p></div>
+      <div data-reveal data-delay="3"><h3>Travel</h3><p>[Add places you've played, if you want.]</p></div>
+    </div>
+    <h3 class="sub" data-reveal>What sport taught me about building</h3>
+    <ul class="traits">
+      <li data-reveal data-delay="1"><b>Discipline</b> Training on the days I don't feel like it, and coding the same way.</li>
+      <li data-reveal data-delay="2"><b>Consistency</b> Small sessions repeated for years beat one big push.</li>
+      <li data-reveal data-delay="3"><b>Competition</b> Pressure shows what you actually know, in a match or in a demo.</li>
+      <li data-reveal data-delay="4"><b>Learning</b> Every loss and every bug points at the next thing to fix.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="wrap sec">
+  <h2 data-reveal>Projects</h2>
+  <p class="lead2" data-reveal data-delay="1">Two apps I'm building for myself. Each started with a question I wanted answered about my own life.</p>
+
+  <article class="proj journal" id="my-journal" aria-labelledby="jt" data-reveal>
+    <div class="proj-head">
+      <div><h3 id="jt">My Journal</h3>
+      <p>A calm, organized place to see how you spend your time and keep a record of your life.</p></div>
+      <button class="btn" data-open="dlg-journal">View overview</button>
+    </div>
+    <div class="shots">
+      <div class="ph" data-id="j-home"></div><div class="ph" data-id="j-today"></div>
+      <div class="ph" data-id="j-library"></div><div class="ph" data-id="j-goals"></div>
+      <div class="ph wide" data-id="j-unique"></div>
+    </div>
+  </article>
+
+  <article class="proj wallet" id="my-wallet" aria-labelledby="wt" data-reveal>
+    <div class="proj-head">
+      <div><h3 id="wt">My Wallet</h3>
+      <p>A simple way to keep track of your money and understand where it goes.</p></div>
+      <button class="btn" data-open="dlg-wallet">View overview</button>
+    </div>
+    <div class="shots w">
+      <div class="ph wide" data-id="w-dash"></div>
+      <div class="ph" data-id="w-trans"></div><div class="ph" data-id="w-budget"></div>
+      <div class="ph wide" data-id="w-extra"></div>
+    </div>
+  </article>
+</section>
+
+<section id="contact" class="band sec">
+  <div class="wrap">
+    <h2 data-reveal>Contact</h2>
+    <p class="lead2" data-reveal data-delay="1">The easiest way to reach me is email.</p>
+    <dl class="contact" data-reveal data-delay="2">
+      <dt>Email</dt><dd><a href="mailto:santij.bdm1@icloud.com">santij.bdm1@icloud.com</a></dd>
+      <dt>Location</dt><dd>Chía, Cundinamarca, Colombia</dd>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer class="foot wrap">
+  <p><b>Santi</b><br>Chía, Colombia</p>
+  <p><a href="https://github.com/santijbdm1-hash" rel="noopener">GitHub</a> <a href="mailto:santij.bdm1@icloud.com">Email</a></p>
+</footer>
+
+<dialog id="dlg-journal" class="dlg journal" aria-labelledby="dj">
+  <button class="close" data-close aria-label="Close overview">Close</button>
+  <h3 id="dj">My Journal</h3>
+  <p>My Journal is a personal activity and life tracking app. It helps you record what you did each day, so over time you can look back and see how you actually spend your time. The aim is a quiet, organized place that feels like a notebook, not a dashboard demanding attention.</p>
+  <h4>Main ideas</h4>
+  <ul>
+    <li>Log activities, routines, leisure and background activities.</li>
+    <li>Keep track of events and the people in your life.</li>
+    <li>Set goals and follow them over time.</li>
+    <li>Write reflections about each day.</li>
+    <li>Browse everything in a library of past entries.</li>
+  </ul>
+</dialog>
+<dialog id="dlg-wallet" class="dlg wallet" aria-labelledby="dw">
+  <button class="close" data-close aria-label="Close overview">Close</button>
+  <h3 id="dw">My Wallet</h3>
+  <p>My Wallet is my personal finance app. It focuses on keeping track of your money simply, so you can see what comes in, what goes out and what's left, without spreadsheets or clutter.</p>
+  <h4>Main ideas</h4>
+  <ul>
+    <li>A dashboard with your finances at a glance.</li>
+    <li>Record income and expenses as transactions.</li>
+    <li>Budgets that show how much you have left to spend.</li>
+    <li>Overviews that explain where your money goes.</li>
+  </ul>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
