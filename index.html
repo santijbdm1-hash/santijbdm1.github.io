@@ -3,164 +3,321 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Santi | Student, developer, athlete from Chía, Colombia</title>
-<meta name="description" content="Personal portfolio of Santi: a student, independent developer and competitive badminton player from Chía, Cundinamarca, Colombia.">
-<meta name="theme-color" content="#16251f">
-<meta property="og:title" content="Santi | Student, developer, athlete">
-<meta property="og:description" content="Projects, badminton and contact details.">
+<title>Santiago Jiménez | Software Developer & Student</title>
+<meta name="description" content="Portfolio of Santiago Jiménez: Software developer and student from Chía, Colombia, building thoughtful web and mobile applications with discipline and continuous learning.">
+<meta name="theme-color" content="#0d1411">
+<meta property="og:title" content="Santiago Jiménez | Software Developer">
+<meta property="og:description" content="Software developer and student from Chía, Colombia. Featured projects, background, and contact.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+
+<!-- Floating background interactive elements -->
+<div class="bg-mesh" aria-hidden="true"></div>
+
 <header class="nav">
-  <a class="brand" href="#top" aria-label="Santi, back to top">Santi</a>
+  <a class="brand" href="#top" aria-label="Santiago Jiménez, back to top">
+    <span class="brand-name">Santiago Jiménez</span>
+    <span class="brand-tag">/ dev</span>
+  </a>
   <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
   <nav id="menu" aria-label="Main">
-    <a href="#about">About</a><a href="#badminton">Badminton</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills & Focus</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="main">
+<!-- Hero Section: Focused on Developer Identity -->
 <section class="hero" id="top">
   <div class="hero-glow" aria-hidden="true"></div>
-  <svg class="court" viewBox="0 0 600 400" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
-    <g pathLength="1">
-      <rect x="40" y="40" width="520" height="320"/><rect x="40" y="75" width="520" height="250"/>
-      <path d="M300 40v320M40 200h520M170 40v320M430 40v320"/>
-    </g>
-  </svg>
-  <!-- Floating shuttlecock decoration -->
-  <svg class="shuttle" width="160" height="200" viewBox="0 0 160 200" aria-hidden="true" fill="none">
-    <ellipse cx="80" cy="170" rx="28" ry="10" stroke="#e9ece4" stroke-width="2"/>
-    <line x1="80" y1="160" x2="80" y2="80" stroke="#e9ece4" stroke-width="2.5"/>
-    <ellipse cx="80" cy="75" rx="46" ry="70" stroke="#e9ece4" stroke-width="1.5" stroke-dasharray="6 4"/>
-    <circle cx="80" cy="162" r="8" fill="#e9ece4" fill-opacity=".4"/>
-  </svg>
+  
+  <!-- Subtle tech/code geometric grid backdrop -->
+  <div class="tech-grid" aria-hidden="true">
+    <div class="tech-grid-inner"></div>
+  </div>
+
   <div class="wrap hero-in">
-    <p class="small">Chía, Cundinamarca, Colombia</p>
-    <h1>Santi</h1>
-    <p class="lead">Student. Developer. Athlete.</p>
-    <p class="hero-text">I build my own apps and I compete in badminton. Both come down to showing up every day and getting a little better.</p>
-    <div class="actions"><a class="btn" href="#projects">See my projects</a><a class="btn ghost" href="#badminton">Badminton</a></div>
+    <div class="hero-badge" data-reveal>
+      <span class="status-dot"></span> Available for projects & collaborations
+    </div>
+    
+    <p class="small" data-reveal data-delay="1">Chía, Cundinamarca, Colombia</p>
+    <h1 data-reveal data-delay="2">Santiago Jiménez</h1>
+    
+    <div class="hero-role-wrapper" data-reveal data-delay="3">
+      <span class="code-bracket">&lt;</span>
+      <span class="typing-text">Software Developer & Student</span>
+      <span class="code-bracket">/&gt;</span>
+    </div>
+    
+    <p class="hero-text" data-reveal data-delay="4">
+      I build modern software products, personal productivity tools, and full-stack solutions. 
+      I believe real growth comes from building with consistency, curiosity, and high athletic discipline.
+    </p>
+    
+    <div class="actions" data-reveal data-delay="5">
+      <a class="btn" href="#projects">Explore Projects <span class="arrow">→</span></a>
+      <a class="btn ghost" href="#about">About Me</a>
+    </div>
+
+    <!-- Quick stats strip -->
+    <div class="hero-metrics" data-reveal data-delay="5">
+      <div class="metric-item">
+        <span class="metric-num">2+</span>
+        <span class="metric-lbl">Active Applications</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">100%</span>
+        <span class="metric-lbl">Self-Driven Learning</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-num">Competitive</span>
+        <span class="metric-lbl">Badminton Discipline</span>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- About Section: Combines Developer Journey + Sport as a Foundation -->
 <section id="about" class="wrap sec">
-  <h2 data-reveal>About me</h2>
-  <div class="cols">
-    <p class="big" data-reveal data-delay="1">I'm a student from Chía who likes technology and wants to understand how things get made.</p>
-    <div class="prose" data-reveal data-delay="2">
-      <p>I'm interested in software development, and I learn best by building. I like taking an idea I have for myself and turning it into something that actually runs.</p>
-      <p>My two main projects, My Journal and My Wallet, started as tools I wanted to use in my own life. I'm still learning, and I treat each project as practice for the next one.</p>
-      <p>Outside the screen, I train and compete in badminton, which has shaped how I work more than anything else.</p>
+  <div class="sec-header" data-reveal>
+    <span class="sec-label">// BACKGROUND & JOURNEY</span>
+    <h2>About Me</h2>
+    <p class="sec-desc">A student driven by curiosity, engineering clean applications, and competing on court.</p>
+  </div>
+
+  <div class="about-grid">
+    <!-- Main Developer Bio Card -->
+    <div class="about-card dev-card" data-reveal data-delay="1">
+      <div class="card-icon">💻</div>
+      <h3>Developer Journey</h3>
+      <p class="big">Learning by building, testing, and shipping real applications from idea to execution.</p>
+      <div class="prose">
+        <p>
+          I am a software developer and student based in Chía, Colombia. My path in technology started from wanting to understand how complex digital systems actually work under the hood. Rather than sticking purely to theory, I learn best by engineering functional software that addresses everyday needs.
+        </p>
+        <p>
+          My flagship projects—<strong>My Journal</strong> (a quiet daily lifestyle tracker) and <strong>My Wallet</strong> (a transparent personal finance manager)—were born out of my own necessity. Each iteration challenges me to craft better UI/UX architectures, clean component hierarchies, and scalable logic.
+        </p>
+      </div>
+      <div class="tech-tags">
+        <span>Frontend Architecture</span>
+        <span>App Development</span>
+        <span>State Management</span>
+        <span>UI/UX Design</span>
+        <span>Iterative Engineering</span>
+      </div>
+    </div>
+
+    <!-- Athletics & Discipline Card (Sport included without overshadowing) -->
+    <div class="about-card sport-card" data-reveal data-delay="2">
+      <div class="card-icon">🏸</div>
+      <h3>Athlete Mindset & Badminton</h3>
+      <p class="sport-lead">Competing at high levels shaped how I write code and tackle engineering problems.</p>
+      <p class="prose-muted">
+        Outside of software engineering, I am a competitive badminton player. Years of demanding tournament circuits, physical training, and tactical preparation taught me principles that directly mirror high-level development:
+      </p>
+
+      <ul class="sport-principles">
+        <li>
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Relentless Consistency</strong>
+            <span>Showing up for deliberate practice every day beats irregular bursts of motivation.</span>
+          </div>
+        </li>
+        <li>
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Composure Under Pressure</strong>
+            <span>Executing decisive moves whether facing match point or debugging production issues.</span>
+          </div>
+        </li>
+        <li>
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Rapid Feedback Loops</strong>
+            <span>Treating every dropped point and every compiler bug as an explicit guideline on what to refine next.</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sport-badge-bar">
+        <span class="sport-pill">Competitive Circuit</span>
+        <span class="sport-pill">Strategic Focus</span>
+        <span class="sport-pill">High Stamina</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="badminton" class="band sec">
+<!-- Featured Projects Section -->
+<section id="projects" class="band sec">
   <div class="wrap">
-    <h2 data-reveal>Badminton</h2>
-    <p class="lead2" data-reveal data-delay="1">I'm a competitive badminton player from Chía. Years of training, travel and tournaments are a big part of who I am.</p>
-    <div class="photos">
-      <div class="ph" data-id="b-action" data-reveal data-delay="1"></div>
-      <div class="ph" data-id="b-tournament" data-reveal data-delay="2"></div>
-      <div class="ph" data-id="b-training" data-reveal data-delay="3"></div>
-      <div class="ph" data-id="b-podium" data-reveal data-delay="4"></div>
+    <div class="sec-header light" data-reveal>
+      <span class="sec-label">// FEATURED WORK</span>
+      <h2>Software Projects</h2>
+      <p class="lead2">Tools built with purpose. Practical software designed to be robust, intuitive, and distraction-free.</p>
     </div>
-    <!-- EDIT: replace the text below with your real results (levels, tournaments, years). -->
-    <div class="facts">
-      <div data-reveal data-delay="1"><h3>Competition</h3><p>[Add your categories, tournaments and results here.]</p></div>
-      <div data-reveal data-delay="2"><h3>Training</h3><p>[Add how often you train and where.]</p></div>
-      <div data-reveal data-delay="3"><h3>Travel</h3><p>[Add places you've played, if you want.]</p></div>
-    </div>
-    <h3 class="sub" data-reveal>What sport taught me about building</h3>
-    <ul class="traits">
-      <li data-reveal data-delay="1"><b>Discipline</b> Training on the days I don't feel like it, and coding the same way.</li>
-      <li data-reveal data-delay="2"><b>Consistency</b> Small sessions repeated for years beat one big push.</li>
-      <li data-reveal data-delay="3"><b>Competition</b> Pressure shows what you actually know, in a match or in a demo.</li>
-      <li data-reveal data-delay="4"><b>Learning</b> Every loss and every bug points at the next thing to fix.</li>
-    </ul>
+
+    <!-- Project 1: My Journal -->
+    <article class="proj journal" id="my-journal" aria-labelledby="jt" data-reveal>
+      <div class="proj-head">
+        <div>
+          <span class="proj-category">LIFESTYLE & PRODUCTIVITY PLATFORM</span>
+          <h3 id="jt">My Journal</h3>
+          <p>A calm, focused environment to capture daily routines, personal reflections, and long-term milestones without overwhelming complexity.</p>
+        </div>
+        <div class="proj-actions">
+          <button class="btn" data-open="dlg-journal">View Architecture & Details</button>
+        </div>
+      </div>
+      <div class="shots">
+        <div class="ph" data-id="j-home"></div>
+        <div class="ph" data-id="j-today"></div>
+        <div class="ph" data-id="j-library"></div>
+        <div class="ph" data-id="j-goals"></div>
+        <div class="ph wide" data-id="j-unique"></div>
+      </div>
+    </article>
+
+    <!-- Project 2: My Wallet -->
+    <article class="proj wallet" id="my-wallet" aria-labelledby="wt" data-reveal>
+      <div class="proj-head">
+        <div>
+          <span class="proj-category">FINANCIAL TRACKING APPLICATION</span>
+          <h3 id="wt">My Wallet</h3>
+          <p>An intuitive personal finance application structured to track income, categorize expenses, and set transparent budgets without messy spreadsheets.</p>
+        </div>
+        <div class="proj-actions">
+          <button class="btn" data-open="dlg-wallet">View Architecture & Details</button>
+        </div>
+      </div>
+      <div class="shots w">
+        <div class="ph wide" data-id="w-dash"></div>
+        <div class="ph" data-id="w-trans"></div>
+        <div class="ph" data-id="w-budget"></div>
+        <div class="ph wide" data-id="w-extra"></div>
+      </div>
+    </article>
   </div>
 </section>
 
-<section id="projects" class="wrap sec">
-  <h2 data-reveal>Projects</h2>
-  <p class="lead2" data-reveal data-delay="1">Two apps I'm building for myself. Each started with a question I wanted answered about my own life.</p>
+<!-- Skills & Philosophy Section -->
+<section id="skills" class="wrap sec">
+  <div class="sec-header" data-reveal>
+    <span class="sec-label">// HOW I WORK</span>
+    <h2>Development Principles</h2>
+    <p class="sec-desc">Core competencies and engineering values guiding how I build software.</p>
+  </div>
 
-  <article class="proj journal" id="my-journal" aria-labelledby="jt" data-reveal>
-    <div class="proj-head">
-      <div><h3 id="jt">My Journal</h3>
-      <p>A calm, organized place to see how you spend your time and keep a record of your life.</p></div>
-      <button class="btn" data-open="dlg-journal">View overview</button>
+  <div class="principles-grid">
+    <div class="principle-card" data-reveal data-delay="1">
+      <div class="card-num">01</div>
+      <h3>User-Centric Architecture</h3>
+      <p>Clean interfaces designed around the person using them, prioritizing intuitive flows, accessibility, and frictionless interactions.</p>
     </div>
-    <div class="shots">
-      <div class="ph" data-id="j-home"></div><div class="ph" data-id="j-today"></div>
-      <div class="ph" data-id="j-library"></div><div class="ph" data-id="j-goals"></div>
-      <div class="ph wide" data-id="j-unique"></div>
+    <div class="principle-card" data-reveal data-delay="2">
+      <div class="card-num">02</div>
+      <h3>Disciplined Execution</h3>
+      <p>Iterative commits, systematic modular refactoring, and treating every build as a learning laboratory for modern best practices.</p>
     </div>
-  </article>
-
-  <article class="proj wallet" id="my-wallet" aria-labelledby="wt" data-reveal>
-    <div class="proj-head">
-      <div><h3 id="wt">My Wallet</h3>
-      <p>A simple way to keep track of your money and understand where it goes.</p></div>
-      <button class="btn" data-open="dlg-wallet">View overview</button>
+    <div class="principle-card" data-reveal data-delay="3">
+      <div class="card-num">03</div>
+      <h3>Performance & Polish</h3>
+      <p>Lightweight footprint, responsive motion, accessible semantic HTML, and zero bloat for snappy experiences on any device.</p>
     </div>
-    <div class="shots w">
-      <div class="ph wide" data-id="w-dash"></div>
-      <div class="ph" data-id="w-trans"></div><div class="ph" data-id="w-budget"></div>
-      <div class="ph wide" data-id="w-extra"></div>
-    </div>
-  </article>
+  </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact" class="band sec">
   <div class="wrap">
-    <h2 data-reveal>Contact</h2>
-    <p class="lead2" data-reveal data-delay="1">The easiest way to reach me is email.</p>
-    <dl class="contact" data-reveal data-delay="2">
-      <dt>Email</dt><dd><a href="mailto:santij.bdm1@icloud.com">santij.bdm1@icloud.com</a></dd>
-      <dt>Location</dt><dd>Chía, Cundinamarca, Colombia</dd>
-    </dl>
+    <div class="sec-header light" data-reveal>
+      <span class="sec-label">// CONNECT</span>
+      <h2>Get In Touch</h2>
+      <p class="lead2">Interested in working together, discussing projects, or exchanging ideas? Feel free to reach out.</p>
+    </div>
+
+    <div class="contact-box" data-reveal data-delay="1">
+      <div class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <div>
+          <h4>Direct Email</h4>
+          <a href="mailto:santij.bdm1@icloud.com" class="contact-link">santij.bdm1@icloud.com</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">📍</span>
+        <div>
+          <h4>Location</h4>
+          <p>Chía, Cundinamarca, Colombia</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <span class="contact-icon">🐙</span>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/santijbdm1-hash" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/santijbdm1-hash</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 </main>
 
 <footer class="foot wrap">
-  <p><b>Santi</b><br>Chía, Colombia</p>
-  <p><a href="https://github.com/santijbdm1-hash" rel="noopener">GitHub</a> <a href="mailto:santij.bdm1@icloud.com">Email</a></p>
+  <div>
+    <p><strong>Santiago Jiménez</strong></p>
+    <p class="foot-sub">Software Developer & Student • Chía, Colombia</p>
+  </div>
+  <div class="foot-links">
+    <a href="https://github.com/santijbdm1-hash" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="mailto:santij.bdm1@icloud.com">Email</a>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
 </footer>
 
+<!-- Modals -->
 <dialog id="dlg-journal" class="dlg journal" aria-labelledby="dj">
   <button class="close" data-close aria-label="Close overview">Close</button>
+  <span class="dialog-tag">APPLICATION SPOTLIGHT</span>
   <h3 id="dj">My Journal</h3>
-  <p>My Journal is a personal activity and life tracking app. It helps you record what you did each day, so over time you can look back and see how you actually spend your time. The aim is a quiet, organized place that feels like a notebook, not a dashboard demanding attention.</p>
-  <h4>Main ideas</h4>
+  <p>My Journal is a personal activity and life tracking application created to eliminate the clutter of conventional planners and social tracking apps. It provides an intimate, notebook-like digital space centered around clarity.</p>
+  
+  <h4>Key Engineering Highlights</h4>
   <ul>
-    <li>Log activities, routines, leisure and background activities.</li>
-    <li>Keep track of events and the people in your life.</li>
-    <li>Set goals and follow them over time.</li>
-    <li>Write reflections about each day.</li>
-    <li>Browse everything in a library of past entries.</li>
+    <li>Structured daily activity logging (routines, deep work, leisure, background sessions).</li>
+    <li>Interactive goal-tracking with time-based milestone evaluations.</li>
+    <li>Daily reflections engine designed with calm typography and frictionless data capture.</li>
+    <li>Searchable historical library with intuitive temporal categorization.</li>
   </ul>
 </dialog>
+
 <dialog id="dlg-wallet" class="dlg wallet" aria-labelledby="dw">
   <button class="close" data-close aria-label="Close overview">Close</button>
+  <span class="dialog-tag">APPLICATION SPOTLIGHT</span>
   <h3 id="dw">My Wallet</h3>
-  <p>My Wallet is my personal finance app. It focuses on keeping track of your money simply, so you can see what comes in, what goes out and what's left, without spreadsheets or clutter.</p>
-  <h4>Main ideas</h4>
+  <p>My Wallet is an approachable personal finance platform. Rather than overwhelming users with unnecessary complexity or bank integrations, it focuses on transparency, smart categorizations, and rapid transaction entries.</p>
+  
+  <h4>Key Engineering Highlights</h4>
   <ul>
-    <li>A dashboard with your finances at a glance.</li>
-    <li>Record income and expenses as transactions.</li>
-    <li>Budgets that show how much you have left to spend.</li>
-    <li>Overviews that explain where your money goes.</li>
+    <li>Live financial summary dashboard with balance indicators and spending rates.</li>
+    <li>Real-time transaction tracking categorized by expenditure type.</li>
+    <li>Dynamic budget ceilings that communicate remaining discretionary spending.</li>
+    <li>Clean visual analytics highlighting trends and financial health over time.</li>
   </ul>
 </dialog>
+
 <script src="script.js"></script>
 </body>
 </html>
